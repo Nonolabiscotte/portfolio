@@ -1,0 +1,23 @@
+<p>experiment works!</p>
+
+<h1>Experiment List Test</h1>
+
+<div class="card">
+    <div class="card-header">
+      Experiments
+    </div>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let item of experimentList" class="list-group-item">
+        <div> Title : {{ item.title }} </div>
+        <div> Company : {{item.company}} </div>
+        <div> Location : {{item.location}} </div>
+        <div> From {{item.startDate}} to {{item.endDate}} </div>
+        <div>
+            <li *ngFor="let skill of item.skills" class="list-group-item"> 
+                {{skill}} 
+            </li>
+        </div>
+        <p>{{item.description}}</p>
+      </li>
+    </ul>
+  </div>
