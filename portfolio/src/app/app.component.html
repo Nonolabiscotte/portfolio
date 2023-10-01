@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>My Angular App</title>
-</head>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   <title>Noé Maechler Angular Portfolio</title>
+  </head>
 
-<body>
-  <app-experiment></app-experiment> <!-- Use the selector for your component here -->
+  <body>
 
-  <app-education></app-education>
-</body>
+    <div class="container">
+
+      <div class='row mb-5'></div>
+
+      <div class="row">
+        <div class="col align-self-center">
+          <app-header></app-header>
+        </div>
+      </div>
+
+      <div class='row mb-5'></div>
+
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <app-resume></app-resume>
+
+      <div class='row mb-5'>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <app-footer></app-footer>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
 
 </html>

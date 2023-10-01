@@ -1,23 +1,34 @@
-<p>experiment works!</p>
+<div class="row mb-3"></div>
+<h2>Experiments</h2>
+<div class="row mb-3"></div>
+<div class="row" *ngFor="let item of experimentList">
 
-<h1>Experiment List Test</h1>
+  <div class="row mb-3"></div>
 
-<div class="card">
-    <div class="card-header">
-      Experiments
+  <div class="col">
+    <div class="card">
+      <div class="card-header">
+        <h3>{{item.title}}</h3>
+      </div>
+      <div class="card-body">
+        <h4>Description</h4>
+        <hr class="hr" />
+        {{item.company}}
+        {{item.location}}
+        {{item.startDate}} to {{item.endDate}}
+        <h4>Skills used</h4>
+        <hr class="hr" />
+        <li *ngFor="let skill of item.skills" class="list-group-item">
+          {{skill}}
+        </li>
+        <hr class="hr" />
+        <h4>Missions</h4>
+      </div>
     </div>
-    <ul class="list-group list-group-flush">
-      <li *ngFor="let item of experimentList" class="list-group-item">
-        <div> Title : {{ item.title }} </div>
-        <div> Company : {{item.company}} </div>
-        <div> Location : {{item.location}} </div>
-        <div> From {{item.startDate}} to {{item.endDate}} </div>
-        <div>
-            <li *ngFor="let skill of item.skills" class="list-group-item"> 
-                {{skill}} 
-            </li>
-        </div>
-        <p>{{item.description}}</p>
-      </li>
-    </ul>
   </div>
+
+  <div class="row mb-3"></div>
+
+</div>
+
+
