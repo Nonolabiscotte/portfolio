@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Education } from 'src/objects/education';
+import { Education } from 'src/model/class/Education';
 
 @Component({
   selector: 'app-education',
@@ -16,7 +16,8 @@ export class EducationComponent {
       startDate: new Date(),
       endDate: new Date(),
       location: "Strasbourg - France",
-      description: "Description test"
+      description: "Description test",
+      abv: "ECAM"
     },
     {
       degree: "Bachelor of Engineering - BE, Engineering Science",
@@ -25,7 +26,8 @@ export class EducationComponent {
       startDate: new Date(),
       endDate: new Date(),
       location: "Lodz - Poland",
-      description: "Desription Test"
+      description: "Desription Test",
+      abv: "LodzUoT"
     },
     {
       degree: "Classe préparatoire aux grandes écoles",
@@ -34,7 +36,8 @@ export class EducationComponent {
       startDate: new Date(),
       endDate: new Date(),
       location: "Strasbourg - France",
-      description: "Description test"
+      description: "Description test",
+      abv: "ECAM"
     }
   ]
 

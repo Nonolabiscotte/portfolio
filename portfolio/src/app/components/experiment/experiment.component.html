@@ -6,24 +6,35 @@
   <div class="row mb-3"></div>
 
   <div class="col">
-    <div class="card">
-      <div class="card-header">
-        <h3>{{item.title}}</h3>
+    <div class="card mb-3" style="max-width: 80rem;">
+      <div class="row">
+        <div class="col-sm-2">
+          <img
+          src="assets/company-icons/{{item.abv}}-icon.png"
+          class="img-thumbnail img-fluid mx-auto d-block company-picture"
+          alt="{{item.abv}}-icon">
+        </div>
+        <div class="col-sm-10">
+          <div class="card-header">
+            <h3>{{item.title}}</h3>
+          </div>
+          <div class="card-body">
+            <h4>Description</h4>
+            <hr class="hr" />
+            {{item.company}}
+            {{item.location}}
+            {{item.startDate}} to {{item.endDate}}
+            <h4>Skills used</h4>
+            <hr class="hr" />
+            <li *ngFor="let skill of item.skills" class="list-group-item">
+              {{skill}}
+            </li>
+            <hr class="hr" />
+            <h4>Missions</h4>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <h4>Description</h4>
-        <hr class="hr" />
-        {{item.company}}
-        {{item.location}}
-        {{item.startDate}} to {{item.endDate}}
-        <h4>Skills used</h4>
-        <hr class="hr" />
-        <li *ngFor="let skill of item.skills" class="list-group-item">
-          {{skill}}
-        </li>
-        <hr class="hr" />
-        <h4>Missions</h4>
-      </div>
+
     </div>
   </div>
 

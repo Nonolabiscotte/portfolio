@@ -6,4 +6,5 @@ export interface Education {
     endDate: Date
     location: String
     description: String
+    abv: String
 }

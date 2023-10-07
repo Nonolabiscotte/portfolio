@@ -6,4 +6,5 @@ export interface Experiment {
     startDate: Date
     endDate: Date
     location: String
+    abv: String
 }

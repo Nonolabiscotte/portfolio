@@ -1,0 +1,11 @@
+.company-picture {
+  display: flex; /* Use flexbox to center vertically and horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: fit-content;
+  height: fit-content;
+}
+
+.card {
+  background-color: #CED0CE;
+}

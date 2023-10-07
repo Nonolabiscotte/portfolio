@@ -1,5 +1,35 @@
-body {
+.app-content {
   background-color: #59657E;
+  margin: 0; /* Remove any default margin to fill the entire viewport */
+  padding: 0; /* Remove any default padding */
+}
+
+.app-header {
+  background-color: #9FB8AD;
+  margin: 0; /* Remove any default margin to fill the entire viewport */
+  padding: 0; /* Remove any default padding */
+}
+
+.app-footer {
+  background-color: #9FB8AD;
+  bottom: 0;
+  // margin: 0; /* Remove any default margin to fill the entire viewport */
+  // padding: 0; /* Remove any default padding */
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent scrollbars on the body */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+app-root {
+  flex: 1;
 }
 
 // toutes les couleurs : #CED0CE #9FB8AD #475841 #3F403F

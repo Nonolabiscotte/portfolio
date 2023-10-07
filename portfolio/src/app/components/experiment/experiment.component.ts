@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Experiment } from 'src/objects/experiment';
+import { Experiment } from 'src/model/class/Experiment';
 
 @Component({
   selector: 'app-experiment',
@@ -20,7 +20,8 @@ export class ExperimentComponent {
       skills: ["Java", "Maven", "Angular"],
       startDate: new Date(),
       endDate: new Date(),
-      location: "Toulouse - France"
+      location: "Toulouse - France",
+      abv: "AF"
     },
     {
       title: "Software Engineer",
@@ -29,7 +30,8 @@ export class ExperimentComponent {
       skills: ["Java", "Maven", "Spring-boot"],
       startDate: new Date(),
       endDate: new Date(),
-      location: "Toulouse - France"
+      location: "Toulouse - France",
+      abv: "BPCE"
     },
     {
       title: "Junior Software Engineer",
@@ -38,7 +40,8 @@ export class ExperimentComponent {
       skills: ["Java", "Angular"],
       startDate: new Date(),
       endDate: new Date(),
-      location: "Toulouse - France"
+      location: "Toulouse - France",
+      abv: "Astek"
     }
   ]
 
