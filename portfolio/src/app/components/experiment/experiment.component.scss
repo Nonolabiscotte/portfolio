@@ -7,5 +7,12 @@
 }
 
 .card {
-  background-color: #CED0CE;
+  background-color: #ffffff;
+}
+
+.centered-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

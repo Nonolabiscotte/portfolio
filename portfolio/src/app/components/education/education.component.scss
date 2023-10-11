@@ -1,3 +1,18 @@
+.school-picture {
+  display: flex; /* Use flexbox to center vertically and horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: fit-content;
+  height: fit-content;
+}
+
 .card {
-  background-color: #CED0CE;
+  background-color: #ffffff;
+}
+
+.centered-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
